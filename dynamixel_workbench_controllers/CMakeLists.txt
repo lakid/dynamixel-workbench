@@ -44,6 +44,10 @@ add_executable(dynamixel_workbench_position_control src/dynamixel_workbench_posi
 add_dependencies(dynamixel_workbench_position_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(dynamixel_workbench_position_control ${catkin_LIBRARIES})
 
+add_executable(dynamixel_workbench_joint_position_control src/dynamixel_workbench_joint_position_control.cpp)
+add_dependencies(dynamixel_workbench_joint_position_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(dynamixel_workbench_joint_position_control ${catkin_LIBRARIES})
+
 add_executable(dynamixel_workbench_velocity_control src/dynamixel_workbench_velocity_control.cpp)
 add_dependencies(dynamixel_workbench_velocity_control ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(dynamixel_workbench_velocity_control ${catkin_LIBRARIES})

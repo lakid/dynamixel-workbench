@@ -18,4 +18,5 @@ int64 profile_acceleration
 int64 present_position
 int64 present_velocity
 int64 present_current
+int64 homing_offset
 int64 moving

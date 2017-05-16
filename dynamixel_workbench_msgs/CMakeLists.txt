@@ -38,6 +38,7 @@ add_message_files(
 add_service_files(
   FILES
   SetPosition.srv
+  SetJointPosition.srv
   SetDirection.srv
   GetWorkbenchParam.srv
 )

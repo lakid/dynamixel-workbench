@@ -1,0 +1,20 @@
+<launch>
+  <node name="dynamixel_workbench_potision_controllers" pkg="dynamixel_workbench_controllers" type="dynamixel_workbench_joint_position_control" required="true" output="screen">
+    <rosparam>
+      device_name: "/dev/ttyUSB0"
+      baud_rate: 57600
+      motor_model: "XM430_W350"
+      protocol_version: 2.0
+      profile_velocity: 10
+      profile_acceleration: 1
+      joint1:
+        motor_id: 1
+      joint1_2:
+        motor_id: 2
+      joint1_3:
+        motor_id: 3
+      joint2:
+        motor_id: 4        
+    </rosparam>
+  </node>
+</launch>

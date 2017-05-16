@@ -1,0 +1,13 @@
+# Server is dynamixel_workbench_tutorials and Client is dynamixel_workbench_controllers
+# This service sends motor position with different unit (radian and raw value)
+
+string unit
+float64 joint1
+float64 joint1_2
+float64 joint1_3
+float64 joint2
+---
+float64 joint1
+float64 joint1_2
+float64 joint1_3
+float64 joint2
